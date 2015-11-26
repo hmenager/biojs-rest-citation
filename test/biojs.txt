@@ -1,0 +1,1 @@
+Corpas, M., Jimenez, R., Carbon, S. J., García, A., Garcia, L., Goldberg, T., … Hermjakob, H. (2014). BioJS: an open source standard for biological visualisation – its status in 2014. F1000Res. doi:10.12688/f1000research.3-55.v1

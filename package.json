@@ -1,0 +1,58 @@
+{
+  "name": "biojs-rest-citation",
+  "description": "Client library to retrieve citation data",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hmenager/biojs-rest-citation",
+  "author": {
+    "name": "hmenager",
+    "email": "hmenager@pasteur.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hmenager/biojs-rest-citation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hmenager/biojs-rest-citation/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/hmenager/biojs-rest-citation/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "mkdirp build && browserify -r ./:biojs-rest-citation -o build/biojs-rest-citation.js",
+    "build-browser": "npm run build",
+    "install": "npm run build",
+    "lint": "jshint -c .jshintrc lib --verbose"
+  },
+  "sniper": {
+    "js": [
+      "build/biojs-rest-citation.js"
+    ],
+    "snippets": [
+      "examples"
+    ],
+    "first": "bibtex"
+  },
+  "dependencies": {
+    "nets": "^3.2.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.0",
+    "browserify": "6.x",
+    "jshint": "^2.5.10",
+    "chai": "1.x",
+    "mocha": "1.x"
+  },
+  "keywords": [
+    "citation",
+    "doi",
+    "reference",
+    "bibliography\\",
+    "biojs"
+  ]
+}
